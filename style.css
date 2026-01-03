@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d5fffc;
+    height: 100vh;
+}
+
+.kontainer-kalkulator {
+    width: 400px;
+    background-color: black;
+    padding: 30px;
+}
+
+.tampilan-angka{
+    height: 80px;
+    display: flex;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.tempat-input {
+    width: 100%;
+    height: 80px;
+    font-size: 40px; /* Ukuran font awal */
+    text-align: right; /* Teks rata kanan */
+    overflow: hidden; /* Mencegah scrolling horizontal */
+    white-space: nowrap; /* Teks tetap dalam satu baris */
+    background-color: transparent;
+    padding-right: 10px;
+    margin-bottom: 30px;
+    box-sizing: border-box; /* Pastikan padding tidak memengaruhi ukuran elemen */
+}
+
+.isi-kalkulator{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+}
+
+button {
+    width: 75px;
+    height: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.operator,
+.delete {
+    background-color: #ffa115;
+    transition: background-color 0.3s ease;
+}
+.operator:hover {
+    background-color: #bc7812;
+}
+
+.delete:hover {
+    background-color: #bc7812;
+}
+
+.nilai {
+    background-color: rgb(60, 255, 255);
+    transition: background-color 0.3s ease;
+}
+
+.nilai:hover {
+    background-color: rgb(21, 179, 179);
+}
+
+.koma{
+    background-color: #dbff0f;
+    transition: background-color 0.3s ease;
+}
+
+.koma:hover {
+    background-color: #a3bd10;
+}
+
+.Nol {
+    width: 160px;
+    background-color: rgb(60, 255, 255);
+    grid-column: span 2;
+    transition: background-color 0.3s ease;
+}
+
+.sNol:hover {
+    background-color: rgb(21, 179, 179);
+}
+
+.AC {
+    background-color: #ff0d00;
+}
+
+.AC:hover{
+    background-color: #ab2b24;
+}
+
+.hasil {
+    background-color: #00ff44;
+    transition: background-color 0.3s ease;
+}
+.hasil:hover {
+    background-color: #08932d;
+}
